@@ -59,7 +59,6 @@ class jenkins::cli {
       'java',
       "-jar ${jar}",
       "-s http://localhost:${port}${prefix}",
-      $::jenkins::_cli_auth_arg,
     ]),
     ' '
   )
